@@ -47,7 +47,7 @@ body{
 
 .signin-form{
     width: 500px;
-    height: 650px;
+    height: 700px;
     padding: 30px;
     background-color: #ffffff !important;
     border-radius: 5px !important;
@@ -61,6 +61,14 @@ body{
     border-radius: 5px !important;
 }
 
+.form-form{
+    width: 650px;
+    height: 700px;
+    padding: 30px;
+    background-color: #ffffff !important;
+    border-radius: 5px !important;
+}
+
 .medsos ul li {
     display: inline-block;
     margin-right: 10px;
@@ -69,7 +77,9 @@ body{
 input[type="fullname"],
 input[type="alamat"],
 input[type="email"],
-input[type="password"]{
+input[type="password"],
+input[type="daritanggal"],
+input[type="selesaitanggal"]{
     background-color: #A9A9A9;
     color: #000000;
     border: 2px solid #696969;
@@ -81,7 +91,9 @@ input[type="password"]{
 input[type="fullname"]:focus,
 input[type="alamat"]:focus,
 input[type="email"]:focus,
-input[type="password"]:focus{
+input[type="password"]:focus
+input[type="daritanggal"]:focus,
+input[type="selesaitanggal"]:focus{
     outline: none;
     border: none;
     background-color: #A9A9A9;
