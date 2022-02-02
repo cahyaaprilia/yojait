@@ -31,7 +31,6 @@ use App\Http\Controllers\WishlistController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/',[IndexController::class,'index'])->name('index');
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
