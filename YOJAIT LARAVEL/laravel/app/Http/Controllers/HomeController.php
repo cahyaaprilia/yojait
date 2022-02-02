@@ -6,8 +6,14 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function index (){
+    public function index (Request $request){
         // dd($request->all());
-        return view('home');
+        $myUser = $request->session()->get('user', false);
+        if($myUser){
+//            echo $myUser;
+            return view('home');
+        }else{
+            return redirect()->route('login');
+        }
     }
 }

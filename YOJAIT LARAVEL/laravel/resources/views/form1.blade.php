@@ -14,8 +14,8 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
   <link rel="stylesheet" href="{{asset('css')}}style.css">
-  <link rel="stylesheet" href="\assets\css\style.css">
-  <link rel="icon" href="../assets/img/logo.png"> 
+  <link rel="stylesheet" href="assets\css\style.css"> 
+    <link rel="icon" href="assets\img\logo.png">
   <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
 
@@ -47,7 +47,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-1">
       <div class="container-fluid">
-        <a href="booking.html">
+        <a href="{{route('booking')}}">
           <img src="assets\img\logo.png" alt="" width="50" height="50">
         </a>
       </div>
@@ -59,7 +59,7 @@
           <div class="container">
             <div class="row">
               <div class="col">
-                <img src="assets\img\pemesanan2.png" style="height: 500px;" alt="">
+                <img src="assets\img\pemesanan.png" style="height: 500px;" alt="">
               </div>
               <div class="col">
                 <div class="global-container">
@@ -68,15 +68,15 @@
                       <h1 class="card-title text-center" style="font-family: monospace;">Form Pemesanan</h1>
                     </div>
                     <div class="card-text">
-                      <form>
+                      <form action="{{route('create-booking')}}" method="POST" enctype="multipart/form-data">
+                        @csrf
                         <div class="container">
                           <div class="row">
                             <div class="col-md-12 order-md-1">
-                              <form class="needs-validation" novalidate>
                                 <div class="row">
                                   <div class="col-md-6 mb-1">
                                     <label for="firstName">Nama Depan</label>
-                                    <input type="text1" class="form-control" id="firstName" placeholder="" value=""
+                                    <input type="text1" class="form-control" id="firstName" name="nama_depan" placeholder="" value=""
                                       required>
                                     <div class="invalid-feedback">
                                       Valid first name is required.
@@ -84,8 +84,9 @@
                                   </div>
                                   <div class="col-md-6 mb-1">
                                     <label for="lastName">Nama Belakang</label>
-                                    <input type="text2" class="form-control" id="lastName" placeholder="" value=""
+                                    <input type="text2" class="form-control" id="lastName" name="nama_belakang" placeholder="" value=""
                                       required>
+                                    <input type='hidden' name='type' value = 'Skirt or Pants'>
                                     <div class="invalid-feedback">
                                       Valid last name is required.
                                     </div>
@@ -96,15 +97,8 @@
                                   </div>
                                 </div>
                                 <div class="mb-3">
-                                  <label for="email">Email <span class="text-muted"></span></label>
-                                  <input type="email" class="form-control" id="email" placeholder="you@example.com">
-                                  <div class="invalid-feedback">
-                                    Please enter a valid email address for shipping updates.
-                                  </div>
-                                </div>
-                                <div class="mb-3">
                                   <label for="address">Alamat</label>
-                                  <input type="alamat" class="form-control" id="address" placeholder="" required>
+                                  <textarea type="alamat" class="form-control" id="address" name="alamat" placeholder="" required></textarea>
                                   <div class="invalid-feedback">
                                     Please enter your shipping address.
                                   </div>
@@ -112,22 +106,20 @@
                                 <div class="row">
                                 <div class="col-md-6 mb-3">
                                     <label for="cc-expiration">Mulai tanggal</label>
-                                    <input type="selesai" class="form-control" id="cc-expiration" placeholder="" required>
+                                    <input type="date" class="form-control" id="cc-expiration" name="start_date" placeholder="" required>
                                     <div class="invalid-feedback">
                                       Expiration date required
                                     </div>
                                   </div>
                                   <div class="col-md-6 mb-3">
                                     <label for="cc-expiration">Sampai tanggal</label>
-                                    <input type="selesai" class="form-control" id="cc-expiration" placeholder="" required>
+                                    <input type="date" class="form-control" id="cc-expiration" name="end_date" placeholder="" required>
                                     <div class="invalid-feedback">
                                       Expiration date required
                                     </div>
                                   </div>
-                                  <form action="upload.php" method="post" enctype="multipart/form-data">
                                     Select image to upload : 
-                                    <input type="file" name="fileToUpload" id="fileToUpload">
-                                  </form>
+                                    <input type="file" name="photo" id="fileToUpload">
                                   <hr class="mb-4">
                                   <div class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input" id="same-address">
@@ -135,17 +127,16 @@
                                       as my billing address</label>
                                   </div>
                                 </div>
-                              </form>
+                                <div class="buton text-center">
+                                    <div class="mb-2">
+                                      <button type="submit" class="btn btn-outline-primary btn-lg btn-block" >Continue</button>
+                                    </div>
+                                  </div>
                             </div>
                           </div>
                         </div>
                       </form>
                     </div>
-                  </div>
-                </div>
-                <div class="buton text-center">
-                  <div class="mb-2">
-                    <a class="btn btn-outline-primary btn-lg btn-block" href="wishlist.html" role="button">Continue</a>
                   </div>
                 </div>
               </div>

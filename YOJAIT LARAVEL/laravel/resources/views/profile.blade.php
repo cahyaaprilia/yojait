@@ -14,15 +14,15 @@
     <title>WEBSITE YOJAIT OFFICIAL</title>
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="\assets\css\style.css">
-    <link rel="icon" href="../assets/img/logo.png"> 
+    <link rel="stylesheet" href="assets\css\style.css"> 
+    <link rel="icon" href="assets\img\logo.png">
     <link href="{{asset('css')}}style.css" rel="stylesheet">
     
   </head>
   <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light py-1">
         <div class="container-fluid">
-            <a href="index.html">
+            <a href="/home">
                 <img src="assets\img\logo.png" alt="" width="70" height="70">
             </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

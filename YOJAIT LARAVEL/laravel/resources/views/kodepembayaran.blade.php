@@ -10,28 +10,27 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="\assets\css\style.css">
-    <link rel="icon" href="../assets/img/logo.png"> 
+    <link rel="stylesheet" href="assets\css\style.css"> 
+    <link rel="icon" href="assets\img\logo.png">
     <link rel="stylesheet" href="{{asset('css')}}style.css">
 
 <body>
     <section id="form">
         <div class="container text-center">
             <h2></h2>
-            <div class="row" style="margin-top: 30px;">
+        <div class="row" style="margin-top: 30px;">
         <div class="container">
         <div class="row">
-        <div class="col">
-            <img src="assets\img\kode.png" style="height: 500px;" alt="">
-                            <div class="buton text-center">
-                                <div class="mb-2">
-                                <a class="btn btn-outline-primary btn-lg" href="process.html" role="button">Let's Go shoping!</a>
-                            </div>
-                            </div>
-                        </form>
+            <div class="col">
+                <img src="assets\img\kode.png" style="height: 500px;" alt="">
+                    <div class="buton text-center">
+                        <div class="mb-2">
+                            <a class="btn btn-outline-primary btn-lg" href="process.html" role="button">Let's Go shoping!</a>
+                        </div>
                     </div>
-                </div>
             </div>
+        </div>
+                </div>
         </div>
         </div>
         </div>

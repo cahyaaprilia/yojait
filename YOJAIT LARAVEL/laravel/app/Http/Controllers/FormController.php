@@ -8,6 +8,6 @@ class FormController extends Controller
 {
     public function index (){
         // dd($request->all());
-        return view('iform');
+        return view('form');
     }
 }

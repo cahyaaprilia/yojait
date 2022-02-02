@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="\assets\css\style.css">
-    <link rel="icon" href="../assets/img/logo.png"> 
+    <link rel="stylesheet" href="assets\css\style.css"> 
+    <link rel="icon" href="assets\img\logo.png"> 
     <link rel="stylesheet" href="{{asset('css')}}style.css">
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light py-1">
         <div class="container-fluid">
-            <a href="index.html">
+            <a href="{{route('home')}}">
                 <img src="assets\img\logo.png" alt="" width="70" height="70">
             </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,8 +49,8 @@
                         <div class="col" style="margin-left: 80px;">
                             <div class="mb-4 d-flex justify-content-center">
                                 <div class="card" style="width: 13rem;" >
-                                    <a href="form">
-                                        <img src="assets\img\Screenshot (299).png"  class="card-img-top" alt="">
+                                    <a href="{{route('form')}}">
+                                        <img src="assets\img\Screenshot (299).png" class="card-img-top" alt="">
                                     </a>
                                         <p class="card-text">Top or Shirt</p>
                                 </div>
@@ -59,7 +59,7 @@
                         <div class="col">
                             <div class="mb-4 d-flex justify-content-center">
                                 <div class="card" style="width: 13rem;">
-                                    <a href="form1">
+                                    <a href="{{route('form1')}}">
                                         <img src="assets\img\Screenshot (300).png" class="card-img-top" alt="">
                                     </a>
                                     <p class="card-text">Skirt or Pants</p>
@@ -69,7 +69,7 @@
                         <div class="col">
                             <div class="mb-4 d-flex justify-content-center">
                                 <div class="card" style="width: 13rem;">
-                                    <a href="form2">
+                                    <a href="{{route('form2')}}">
                                     <img src="assets\img\Screenshot (301).png" class="card-img-top" alt="">
                                 </a>
                                     <p class="card-text">Dress or Suit</p>

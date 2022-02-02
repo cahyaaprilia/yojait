@@ -12,8 +12,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Zilla+Slab:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="assets\css\style.css">
-    <link rel="icon" href="../assets/img/logo.png">  
+    <link rel="stylesheet" href="assets\css\style.css"> 
+    <link rel="icon" href="assets\img\logo.png"> 
     <link rel="stylesheet" href="{{asset('css')}}style.css">
 
 <body>

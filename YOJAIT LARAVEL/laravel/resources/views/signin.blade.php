@@ -15,8 +15,8 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="\assets\css\style.css">
-    <link rel="icon" href="../assets/img/logo.png"> 
-    <link href="{{asset('css')}}style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets\css\style.css"> 
+    <link rel="icon" href="assets\img\logo.png">
     
   </head>
   <body>

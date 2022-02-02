@@ -6,8 +6,14 @@ use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
-    public function index (){
+    public function index (Request $request){
         // dd($request->all());
-        return view('index');
+        $myUser = $request->session()->get('user', false);
+        if($myUser){
+//            echo $myUser;
+            return redirect()->route('home');
+        }else{
+            return view('index');
+        }
     }
 }
